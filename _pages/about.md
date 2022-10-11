@@ -1,17 +1,16 @@
 ---
-layout: about
+layout: page
 title: about
 permalink: /
 description: PhD student in Computer Science, member of the <a href="http://tagkopouloslab.ucdavis.edu/">Integrative Biology and Predictive Analytics lab</a> at UC Davis. 
 
 profile:
-  align: right
+  align: right 
   image: prof_pic.png
   address: 
 
-news: true  # includes a list of news items
+news: false # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
 ---
 
 Mostly working on NLP x nutrition :sushi: 
