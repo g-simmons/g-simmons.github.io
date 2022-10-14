@@ -13,8 +13,8 @@ news: false # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 ---
 
-PhD student in Computer Science, member of the <a href="http://tagkopouloslab.ucdavis.edu/">Integrative Biology and Predictive Analytics lab</a> at UC Davis. 
+As artificial intelligence becomes more capable, we humans will be exposed to new experiences at an accelerating pace. 
 
-Mostly working on NLP x nutrition :sushi: 
+I hope to nudge the future in a direction that encourages meaningful, equanimous human participation in these experiences.
 
-Also interested in AGI safety and development, holistic health, optimized human performance, and all things machine learning. Send me a message on LinkedIn!
+My [current research](https://arxiv.org/abs/2209.12106) focuses on the intersection of Large Language Models and [Moral Foundations Theory](https://moralfoundations.org/).
