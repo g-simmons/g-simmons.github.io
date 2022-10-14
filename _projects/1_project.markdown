@@ -1,7 +1,7 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
+title: Moral Mimicry
+description: Can large language models reproduce the moral biases of political groups?
 img: /assets/img/12.jpg
 importance: 1
 ---
