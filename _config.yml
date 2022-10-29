@@ -26,7 +26,7 @@ navbar_fixed: true
 footer_fixed: true
 
 # Dimensions
-max_width: 1000px 
+max_width: 1200px 
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -86,7 +86,7 @@ collections:
     output: false
     permalink: /news/:path/
   projects:
-    output: false
+    output: true
     permalink: /projects/:path/
 
 news_limit: 0

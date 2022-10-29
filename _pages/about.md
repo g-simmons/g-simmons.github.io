@@ -13,6 +13,8 @@ news: false # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 ---
 
+Artificial Intelligence ∞ Human Experience
+
 As artificial intelligence becomes more capable, we humans will be exposed to new experiences at an accelerating pace. 
 
 I hope to nudge the future in a direction that encourages meaningful, equanimous human participation in these experiences.
