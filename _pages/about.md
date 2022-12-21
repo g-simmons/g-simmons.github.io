@@ -19,4 +19,4 @@ As artificial intelligence becomes more capable, we humans will be exposed to ne
 
 I hope to nudge the future in a direction that encourages meaningful, equanimous human participation in these experiences.
 
-My current research focuses on the intersection of Large Language Models and [Moral Foundations Theory](https://moralfoundations.org/) ([paper draft](https://arxiv.org/abs/2209.12106), [slides](https://g-simmons.github.io/mft_textgen_slides/)).
+My current research focuses on the intersection of Large Language Models and [Moral Foundations Theory](https://moralfoundations.org/) ([paper draft](https://arxiv.org/abs/2209.12106), [slides](https://g-simmons.github.io/mft_textgen_slides)).
