@@ -89,6 +89,12 @@ collections:
   projects:
     output: false
     permalink: /projects/:path/
+  readinglist:
+    output: true
+    permalink: /reading-list/:path/
+  papercasts:
+    output: true
+    permalink: /papercast/:path/
 
 news_limit: 10
 
