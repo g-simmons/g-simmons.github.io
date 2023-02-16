@@ -23,19 +23,27 @@ This page is a collection of resources that have been inspiring or helpful for m
 
 
 ## Workflow
+- **Reading**
+  - Paper recommendations
+    - Semantic Scholar
+    - Twitter
+    - Lab.ml trending papers
 
-- **Notes and writing** in [Obsidian](https://obsidian.md/)
-  - Vim Keybindings
-  - Advanced Tables
-  - Better Word Count
-  - Citations
-  - Clear Unused Images
-  - Quick LateX
-  - Remember File State
+- **Notes and writing** 
+  - [Obsidian](https://obsidian.md/)
+    - Vim Keybindings
+    - Advanced Tables
+    - Better Word Count
+    - Citations w/ Zotero
+    - Clear Unused Images
+    - Quick LateX
+    - Remember File State
+  - [MathPix snipping tool](https://mathpix.com/desktop-downloads)
+  - [Zotero](https://www.zotero.org/) w/ browser plugin
 
 - **Publishing** from Obsidian to PDF/TeX with **Pandoc** (probably soon migrating to Quarto)
 
-- **Slides** in Quarto/RevealJS
+- **Slides** in [Quarto/RevealJS](https://quarto.org/docs/presentations/revealjs/)
 
 - **Code** in VSCode
   - GitHub Copilot
@@ -44,15 +52,15 @@ This page is a collection of resources that have been inspiring or helpful for m
 
 - **Terminal**
   - Zsh
-  - Oh My Zsh
-  - plugins=(zsh-autosuggestions zsh-syntax-highlighting zsh-vim-mode fzf)
-  - zsh-vim-mode!!
-  - tmux
-  - NeoVim for quick file edits
+  - [Oh My Zsh](https://ohmyz.sh/)
+    - plugins=(zsh-autosuggestions zsh-syntax-highlighting zsh-vim-mode fzf)
+    - zsh-vim-mode!!
+  - [tmux](https://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/)
+  - [NeoVim](https://neovim.io/) for quick file edits
 
 - **Keybindings**
-  - Some clunky combination of Karabiner Elements and Keybaord Maestro
+  - Some clunky combination of [Karabiner Elements](https://karabiner-elements.pqrs.org/), [Keyboard Maestro](https://www.keyboardmaestro.com/main/)
 
-- **Remembering things** with Obsidian Spaced Repetition
+- **Remembering things** with [Obsidian Spaced Repetition](https://github.com/st3v3nmw/obsidian-spaced-repetition)
 
 If you have similar taste and have suggestions for my workflow, I'd love to connect!
