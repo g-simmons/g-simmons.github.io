@@ -22,7 +22,7 @@ This page is a collection of resources that have been inspiring or helpful for m
 - [AI Safety Jobs & Internships](https://aisafety.training/)
 - [How to Choose Your Grad School](https://timdettmers.com/2022/03/13/how-to-choose-your-grad-school) - Tim Dettmers
 - [CSRankings](https://csrankings.org/)
-
+- [Student Perspectives on Applying to NLP PhD Programs](https://blog.nelsonliu.me/2019/10/24/student-perspectives-on-applying-to-nlp-phd-programs/)
 
 ## Workflow
 - **Reading**
