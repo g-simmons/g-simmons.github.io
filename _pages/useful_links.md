@@ -20,6 +20,8 @@ This page is a collection of resources that have been inspiring or helpful for m
 ## Careers
 
 - [AI Safety Jobs & Internships](https://aisafety.training/)
+- [How to Choose Your Grad School](https://timdettmers.com/2022/03/13/how-to-choose-your-grad-school) - Tim Dettmers
+- [CSRankings](https://csrankings.org/)
 
 
 ## Workflow
@@ -57,6 +59,8 @@ This page is a collection of resources that have been inspiring or helpful for m
     - zsh-vim-mode!!
   - [tmux](https://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/)
   - [NeoVim](https://neovim.io/) for quick file edits
+  - Very quick data exploration in [Visidata](https://www.visidata.org/)
+    - Visidata is a new tool for me, replaces opening a file in Excel or Jupyter + Pandas to get quick summary information.
 
 - **Keybindings**
   - Some clunky combination of [Karabiner Elements](https://karabiner-elements.pqrs.org/), [Keyboard Maestro](https://www.keyboardmaestro.com/main/)

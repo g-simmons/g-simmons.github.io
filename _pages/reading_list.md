@@ -8,7 +8,7 @@ nav: true
 
 Papers I've at least marked for reading. Mostly NLP and morality/ethics for now.
 
-Generated with [papercast](https://github.com/g-simmons/papercast) and [RSS2HTML](https://rss.bloople.net/).
+Generated with [papercast](https://github.com/papercast-dev/papercast) and [RSS2HTML](https://rss.bloople.net/).
 
 <div class="reading-list">
 
