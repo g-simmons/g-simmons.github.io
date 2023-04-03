@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Notes on My Research Philosophy"
-date: 2022-04-02 11:12:00-0400
+date: 2023-04-02 11:12:00-0400
 description: My thoughts on how I can be effective in research.
 ---
 
