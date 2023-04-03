@@ -67,4 +67,4 @@ This page is a collection of resources that have been inspiring or helpful for m
 
 - **Remembering things** with [Obsidian Spaced Repetition](https://github.com/st3v3nmw/obsidian-spaced-repetition)
 
-If you have similar taste and have suggestions for my workflow, I'd love to connect!
+If you have similar taste and have suggestions for my workflow, I'd love to hear from you!
