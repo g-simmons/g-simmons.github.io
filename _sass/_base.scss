@@ -3,6 +3,23 @@
  ******************************************************************************/
 
 // Typography
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+
+.blog-post {
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+  }
+  max-width: 800px;
+  // center the content horizontally
+  margin: auto;
+}
 
 p,
 h1,
@@ -82,7 +99,7 @@ table.table a {
 
 .post-description {
   margin-bottom: 2rem;
-  font-size: 0.875rem;
+  font-size: x-large;
 
   a {
     color: inherit;
@@ -339,7 +356,14 @@ footer.sticky-bottom {
 
 // Projects
 
+// Set font size for paragraphs to large
+
+p {
+  font-size: large;
+}
+
 .projects {
+
   .grid-item {
     width: 250px;
     margin-bottom: 10px;
