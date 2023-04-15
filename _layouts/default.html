@@ -15,8 +15,17 @@
 
   <!-- Content -->
 
-  <div class="container-xl mt-5">
-    {{ content }}
+  <div style="display: flex;max-width: 1150px;margin: auto;">
+    <div class="container-xl mt-5">
+      {{ content }}
+    </div>
+    {% if page.toc %}
+    <div class="blog-toc-container">
+      <div class="blog-toc">
+        {% include toc.html html=content anchor_class="anchor"%}
+      </div>
+    </div>
+    {% endif %}
   </div>
 
   <!-- Footer -->

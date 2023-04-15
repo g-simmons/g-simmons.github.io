@@ -24,6 +24,21 @@ $max-content-width: {{site.max_width}};
   flex-direction: column;
 }
 
+.anchor {
+  font-size: large;
+  margin-left: 0.5em;
+  color: #bbb;
+  display: block;
+
+}
+
+// remove bullet points from lists at any level of nesting inside .blog-toc
+
+.blog-toc ul {
+  list-style-type: none;
+  padding: 0;
+}
+
 .webvtt-player audio {
   // width: 25%;
   background-color: #ccc;

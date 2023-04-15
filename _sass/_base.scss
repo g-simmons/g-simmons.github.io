@@ -9,6 +9,8 @@ h3,
 h4 {
   margin-top: 3rem;
   margin-bottom: 1rem;
+  scroll-margin-top: 100px;
+  scroll-margin-bottom: 100px;
 }
 
 
@@ -16,9 +18,7 @@ h4 {
   h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
   }
-  max-width: 800px;
   // center the content horizontally
-  margin: auto;
 }
 
 p,
@@ -121,6 +121,17 @@ table.table a {
   background-color: var(--global-bg-color);
   max-width: 1150px;
   margin: auto;
+}
+
+.blog-toc-container {
+  max-width: 1150px;
+}
+
+.blog-toc {
+  position: sticky;
+  top: 80px;
+  margin-top: 6rem;
+  padding-left: 1rem;
 }
 
 .navbar.navbar-light {
