@@ -392,7 +392,54 @@ p {
   .card img {
     width: 100%;
   }
+
+  .card .tool-tag-img {
+    width: auto;
+  }
+
+  .card .card-title {
+    margin-top: 0.5rem;
+  }
 }
+
+.tool-tag {
+  font-size: 0.75rem;
+  color: $grey-color;
+  margin-bottom: 0;
+}
+.tool-tag-img {
+  max-height: 30px;
+  object-fit: contain;
+  width: auto;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.project-tools {
+  box-shadow: inset 0px 7px 5px -5px rgba(0, 0, 0, 0.25);
+  margin-top: 10px;
+  padding-top: 10px;
+  position: relative;
+  top: -10px;
+  left:-4px;
+  width:100%;
+}
+
+.project-tools-title {
+  padding-top: 0.5em;
+  padding-left: 0.5em;
+  color: $grey-color;
+}
+
+.project-tools-inner {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+}
+
+
 
 
 // Publications
