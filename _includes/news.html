@@ -5,7 +5,8 @@
   <div class="table-responsive">
     <table class="table table-sm table-borderless">
       {% assign news = site.news | reverse %}
-      {% for item in site.news limit: site.news_limit %}
+      <!-- {%- assign news = site.news | reverse -%} -->
+      {% for item in news limit: site.news_limit %}
       <tr>
         <th scope="row">{{ item.date | date: "%b %-d, %Y" }}</th>
         <td>
