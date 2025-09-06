@@ -6,7 +6,7 @@ group :jekyll_plugins do
     gem 'jekyll-paginate-v2'
     gem 'jekyll-scholar'
     gem 'jekyll-twitter-plugin'
-    gem 'jemoji'
+    gem 'jemoji', "0.12.0"
     gem 'unicode_utils'
     gem 'webrick'
 end
