@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Gabriel  Simmons | blog</title>
+<title>Gabriel  Simmons | I built my own multi-GPU deep learning workstation... why?</title>
 <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 ">
 
@@ -37,7 +37,7 @@
 <link rel="shortcut icon" href="/assets/img/favicon.ico">
 <link rel="stylesheet" href="/assets/css/main.css">
 
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/blog/2022/dl-build/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -113,8 +113,6 @@
           <li class="nav-item active">
             <a class="nav-link" href="/blog/">
               blog
-              
-              <span class="sr-only">(current)</span>
               
             </a>
           </li>
@@ -242,181 +240,49 @@
 
   <div style="display: flex;max-width: 1150px;margin: auto;">
     <div class="container-xl mt-5">
-      <div class="post">
+      
 
-  <div class="header-bar">
-    <!-- <h1>Blog</h1> -->
-    <h2>tokens... train wisely</h2>
-  </div>
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">I built my own multi-GPU deep learning workstation... why?</h1>
+    <p class="post-meta">October 26, 2022</p>
+  </header>
+
+  <article class="post-content">
+    <p>NLP is going to the cloud! The next generation of LLMs will have a trillion parameters, you’ll never run those locally! Why would you buy a desktop ML rig?</p>
+
+<p>The crypto market crashed, and GPU prices fell to below MSRP for the first time in a while. I made an impulse purchase of 2 RTX 3090s. That’s pretty much it.</p>
+
+<p>That’s not much justification, and this was far from a disposable income purchase. But it really did start with an impulse buy. I think shallow justification can work for or against you, and this time I let it motivate me to do something new.</p>
+
+<p>After staring at the 3090s for a bit, it turned out there were a few more good reasons:</p>
+
+<p><strong>Sunk cost (the good kind):</strong> Cognitive biases like the sunk cost fallacy usually get a bad rep. At least in this context, the sunk cost bias can be a useful motivator. It’s hard to wake up, look at a brand new machine, and not want to put it to use. Language models are getting bigger, and a lot of the action in NLP is happening on cloud infra. But paying per-token for a cloud API, there is a financial disincentive to do more experiments. With local compute, I feel a little bit bad if I <em>don’t</em> do more experiments.</p>
+
+<p><strong>Work for the meticulous muscle</strong>. Working with code has changed my psychology. Building something in software, you can start with whatever you know best, and build out the less-certain components later. Very few other disciplines work this way. You can’t build the 14th floor of a skyscraper before building the foundation. This relative freedom from constraint is one of my favorite parts of working with code, but it has a downside. In “the real world” I’m uncomfortably aware of how order-sensitive and irreversible most tasks are.</p>
+
+<p>Every so often I think I can cure myself with exposure therapy. <em>Yeah, I want to be a meticulous craftsman.</em> <em>Yeah, I want to do something that requires attention to detail at each of a dozen irreversible steps.</em></p>
+
+<p>This rarely goes as planned. I usually realize halfway through that I like software a lot more. If I’m being honest, this was another one of those times. But I will count it as having worked some important mental muscle or something. No pain no gain.</p>
+
+<p><strong>Work while sleeping.</strong> Now I can use my laptop to watch Netflix in the evening without worrying about stealing cycles from experiment runs. There is something very pleasing about knowing that your computer is working for you even while you sleep. There’s always something that the computer could be doing to help you make progress. Often this is a reasonable experiment where you have expectations about the outcome. But sometimes you finish those, then what? Having resources that would otherwise be sitting idle encourages me to be more creative when I’ve exhausted the obvious ways to put the computer to work. Sometimes it’s a long training run for no reason other than to see what happens.</p>
+
+<p><strong>Become more knowledgeable.</strong> 
+Breadth vs. depth is a kind of exploration-exploitation tradeoff - broad encyclopedic knowledge comes in handy, but in unpredictable ways. Increasing depth of knowledge in an area of expertise has more predictable rewards, but it’s hard to be creative without some crossover ideas from other domains. This project gave me a chance to learn a little about areas adjacent to my main interests.</p>
+
+<p>I learned something about compute hardware. What is a PCIe lane, for example? I hadn’t thought much about the connection between computer architecture in the abstract and the reality of a desktop computer before this project.</p>
+
+<p>Having my own hardware has also encouraged me to learn more about quantization and other topics related to accelerating LLM training and inference. “How many LLM parameters can you fit into 48 gigs of VRAM?” is a much more interesting question when you are the proud owner of 48 gigs of VRAM.</p>
+
+<p>Build pics and some LLM inference results coming soon…</p>
+
+  </article>
 
   
-
-  <ul class="post-list">
-    
-
-    
-    
-    
-    
-
-    <li>
-      <h3>
-        
-        <a class="post-title" href="/blog/2023/how-I-find-relevant-papers/">How I Find Relevant Papers</a>
-        
-      </h3>
-      <p>It's not hard, but it takes time.</p>
-      <p class="post-meta">
-        7 min read &nbsp; &middot; &nbsp;
-        July 25, 2023
-      </p>
-      <p class="post-tags">
-        <a href="/blog/2023">
-          <i class="fas fa-calendar fa-sm"></i> 2023 </a>
-
-        
-
-        
-      </p>
-    </li>
-
-    
-
-    
-    
-    
-    
-
-    <li>
-      <h3>
-        
-        <a class="post-title" href="/blog/2023/making-gdocs-easy-appscript/">Making Google Docs slightly better with App Scripts</a>
-        
-      </h3>
-      <p>Apparently indentation settings are for power users only</p>
-      <p class="post-meta">
-        4 min read &nbsp; &middot; &nbsp;
-        May 27, 2023
-      </p>
-      <p class="post-tags">
-        <a href="/blog/2023">
-          <i class="fas fa-calendar fa-sm"></i> 2023 </a>
-
-        
-
-        
-      </p>
-    </li>
-
-    
-
-    
-    
-    
-    
-
-    <li>
-      <h3>
-        
-        <a class="post-title" href="/blog/2023/custom-ergonomics/">Custom Ergonomics</a>
-        
-      </h3>
-      <p>How to not die by sitting</p>
-      <p class="post-meta">
-        4 min read &nbsp; &middot; &nbsp;
-        April 2, 2023
-      </p>
-      <p class="post-tags">
-        <a href="/blog/2023">
-          <i class="fas fa-calendar fa-sm"></i> 2023 </a>
-
-        
-
-        
-      </p>
-    </li>
-
-    
-
-    
-    
-    
-    
-
-    <li>
-      <h3>
-        
-        <a class="post-title" href="/blog/2023/research-philosopy/">Notes on My Research Philosophy</a>
-        
-      </h3>
-      <p>My thoughts on how I can be effective in research.</p>
-      <p class="post-meta">
-        3 min read &nbsp; &middot; &nbsp;
-        April 2, 2023
-      </p>
-      <p class="post-tags">
-        <a href="/blog/2023">
-          <i class="fas fa-calendar fa-sm"></i> 2023 </a>
-
-        
-
-        
-      </p>
-    </li>
-
-    
-
-    
-    
-    
-    
-
-    <li>
-      <h3>
-        
-        <a class="post-title" href="/blog/2022/apparently_language_to_bridge_the_AI_ethics_AI_safety_language_divide/">The Apparent Perspective: Language to Bridge the Anthropomorphism Divide</a>
-        
-      </h3>
-      <p>Why AI safety and AI ethics folks keep talking past each other, and what we can do about it.</p>
-      <p class="post-meta">
-        9 min read &nbsp; &middot; &nbsp;
-        December 20, 2022
-      </p>
-      <p class="post-tags">
-        <a href="/blog/2022">
-          <i class="fas fa-calendar fa-sm"></i> 2022 </a>
-
-        
-
-        
-      </p>
-    </li>
-
-    
-  </ul>
-
-  
-<nav aria-label="Blog page naviation">
-  <ul class="pagination pagination-lg justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="" tabindex="-1" aria-disabled="">Newer</a>
-    </li>
-    
-      
-        <li class="page-item active"><a class="page-link" href="/blog/index.html" title="blog">1</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/2/index.html" title="blog - page 2">2</a></li>
-      
-    
-    <li class="page-item ">
-      <a class="page-link" href="/blog/page/2/">Older</a>
-    </li>
-  </ul>
-</nav>
-
-
 
 </div>
+
     </div>
     
   </div>

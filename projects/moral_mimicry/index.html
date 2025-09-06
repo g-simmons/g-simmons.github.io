@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Gabriel  Simmons | blog</title>
+<title>Gabriel  Simmons | Moral Mimicry</title>
 <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 ">
 
@@ -37,7 +37,7 @@
 <link rel="shortcut icon" href="/assets/img/favicon.ico">
 <link rel="stylesheet" href="/assets/css/main.css">
 
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/projects/moral_mimicry/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -110,11 +110,9 @@
           </li>
           
           <!-- Blog -->
-          <li class="nav-item active">
+          <li class="nav-item ">
             <a class="nav-link" href="/blog/">
               blog
-              
-              <span class="sr-only">(current)</span>
               
             </a>
           </li>
@@ -242,181 +240,93 @@
 
   <div style="display: flex;max-width: 1150px;margin: auto;">
     <div class="container-xl mt-5">
-      <div class="post">
+      <div class="post blog-post">
 
-  <div class="header-bar">
-    <!-- <h1>Blog</h1> -->
-    <h2>tokens... train wisely</h2>
-  </div>
+  <header class="post-header">
+    <h1 class="post-title">Moral Mimicry</h1>
+    <p class="post-description">Can large language models reproduce the moral biases of political groups?</p>
+  </header>
 
-  
+  <article class="blog-article">
+    <p>In the past decades, the United States has seen a rise in political polarization. Liberals and conservatives talk past each other, with common ground apparently getting smaller and smaller. What’s behind this phenomenon?</p>
 
-  <ul class="post-list">
-    
+<p>A theory from moral psychology offers one answer to this question: liberals and conservatives have different <em>moral foundations</em>.</p>
 
-    
-    
-    
-    
+<p><img class="img-fluid z-depth-1" src="/assets/img/pillars.jpg" style="width:50%;margin:auto;display:inherit;" /></p>
 
-    <li>
-      <h3>
-        
-        <a class="post-title" href="/blog/2023/how-I-find-relevant-papers/">How I Find Relevant Papers</a>
-        
-      </h3>
-      <p>It's not hard, but it takes time.</p>
-      <p class="post-meta">
-        7 min read &nbsp; &middot; &nbsp;
-        July 25, 2023
-      </p>
-      <p class="post-tags">
-        <a href="/blog/2023">
-          <i class="fas fa-calendar fa-sm"></i> 2023 </a>
+<h2 id="moral-foundations-theory">Moral Foundations Theory</h2>
+<p>Moral Foundations Theory (MFT) attempts to explain this variance. MFT is a theory of morality that argues that people’s moral sensibilities draw on five themes, or “foundations”. For those with a background in math or machine learning, you might think of the moral foundations as the principal components of moral reasoning. The <em>Moral Foundations Hypothesis</em> argues that the relative importance of these foundations varies across social groups, with liberals and conservatives in the US being an example. The “Care” foundation is more important to liberals in the United States than to conservatives, and conservatives value the “Authority” foundation more than liberals. In fact, this variance in moral biases is not just a US phenomenon, but is also observed in other countries. Human social groups tend to vary in the relative importance of certain moral themes, and this variation is reflected in their moral reasoning.</p>
 
-        
+<p>The Moral Foundations Hypothesis offers an explanation for why people of differing social groups might talk past each other when it comes to moral issues. It also offers optimism - acknowledging and studying this difference could help to bridge ideological gaps and encourage productive dialogue.</p>
 
-        
-      </p>
+<h2 id="how-do-language-models-use-moral-language">How do language models use moral language?</h2>
+<p>To evaluate whether LLMs use moral language appropriately, I introduced two criteria:</p>
+
+<p><strong>Criterion A</strong> proposes that LLMs satisfy some level of human-like foundation word use if they use foundation words that are situationally appropriate, meaning they should be more likely to express a particular foundation when prompted with a scenario where that foundation is salient.</p>
+
+<p><strong>Criterion B</strong> demands that LLMs not deviate from human foundation use beyond a certain level of variation that is expected among humans.</p>
+
+<p>Our results showed that LLMs do satisfy Criterion A, as they increased the use of foundation-associated words appropriate to the ground truth foundation label across all five foundations.</p>
+
+<p>However, we found that the difference between the language model and human foundation use was generally greater than the difference between individual humans, indicating that LLMs do not fully meet Criterion B.</p>
+
+<h2 id="do-language-models-reproduce-our-moral-biases">Do language models reproduce our moral biases?</h2>
+<p>Since so much of human thought is expressed in text, it stands to reason that models trained on large amounts of text might learn something about human morality. This leads to a natural question:</p>
+
+<p><em>Can large language models reproduce our moral biases?</em></p>
+
+<p>The <em>Moral Mimicry</em> project looks at this question specifically in the context of the Moral Foundations Hypothesis, testing whether models like GPT-3 can simulate the moral biases of US conservatives and liberals <sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>.</p>
+
+<p><em>If we prompt a language model to simulate a political liberal performing some moral reasoning task, does it use liberal moral foundations?</em></p>
+
+<p><img class="img-fluid z-depth-1" src="/assets/img/moral_mimicry_rq2.png" /></p>
+<div class="caption"> 
+</div>
+
+<p>Results indicate that models from the GPT-3, GPT-3.5 and OPT model families are more likely to use the binding foundations when prompted with conservative political identity, and are more likely to use the individualizing foundations when prompted with liberal political identity. Emphasis on individual foundations in each category differs by model family. OPT-30B shows larger effect sizes for Fairness/Cheating than Care/Harm and larger effect sizes for Sanctity/Degradation vs.~Authority/Subversion, while GPT-3.5 demonstrates the opposite. I suspect that this may be due to differences in training data and/or training practices between the model families. This opens an interesting question of how to influence the moral mimicry capabilities that emerge during training, via dataset curation or other methods.</p>
+
+<h2 id="how-does-llm-foundation-use-change-with-model-size">How does LLM foundation use change with model size?</h2>
+
+<p><img class="img-fluid z-depth-1" src="/assets/img/moral_mimicry_rq6.png" /></p>
+<div class="caption"> 
+</div>
+
+<p>The results from show some relationship between moral mimicry and model size. Effect sizes tend to increase with parameter count in the OPT family, and less so in the GPT-3 family.</p>
+
+<p>Both 175B-parameter GPT-3.5 models show relatively strong moral mimicry capabilities, moreso than the 175B GPT-3 model text-davinci-001. This suggests that parameter count is not the only factor leading to moral mimicry. The GPT-3.5 models were trained with additional supervised fine-tuning not applied to the GPT-3 family, and used text and code pre-training rather than text alone.</p>
+
+<h2 id="read-the-paper">Read the Paper</h2>
+<p><a href="/assets/pdf/moral_mimicry_Apr_14_2023.pdf">Latest Draft</a></p>
+
+<p>An earlier version of the work is also available on <a href="https://arxiv.org/abs/2209.12106">ArXiv</a>.</p>
+
+<h2 id="related-work">Related Work</h2>
+<p>This work connects to a number of other papers investigating the capablility of Large Language Models to simulate humans. If this work is interesting to you, I would highly recommend reading the following papers:</p>
+
+<ul>
+  <li><a href="https://www.cambridge.org/core/journals/political-analysis/article/out-of-one-many-using-language-models-to-simulate-human-samples/035D7C8A55B237942FB6DBAD7CAA4E49">Out of One, Many: Using Language Models to Simulate Human Samples</a> by Lisa P. Argyle, et. al.</li>
+  <li><a href="https://arxiv.org/abs/2303.17548">Whose Opinions do Language Models Reflect?</a> by Shibani Santurkar, et. al.</li>
+</ul>
+
+<h4 id="footnotes">Footnotes</h4>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>This choice was based on data availability - there are several human studies investigating the differences between these groups. In theory the methods could be applied to any other social groups, and I suspect that this will be a growing area of research in the coming years. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
     </li>
+  </ol>
+</div>
 
-    
-
-    
-    
-    
-    
-
-    <li>
-      <h3>
-        
-        <a class="post-title" href="/blog/2023/making-gdocs-easy-appscript/">Making Google Docs slightly better with App Scripts</a>
-        
-      </h3>
-      <p>Apparently indentation settings are for power users only</p>
-      <p class="post-meta">
-        4 min read &nbsp; &middot; &nbsp;
-        May 27, 2023
-      </p>
-      <p class="post-tags">
-        <a href="/blog/2023">
-          <i class="fas fa-calendar fa-sm"></i> 2023 </a>
-
-        
-
-        
-      </p>
-    </li>
-
-    
-
-    
-    
-    
-    
-
-    <li>
-      <h3>
-        
-        <a class="post-title" href="/blog/2023/custom-ergonomics/">Custom Ergonomics</a>
-        
-      </h3>
-      <p>How to not die by sitting</p>
-      <p class="post-meta">
-        4 min read &nbsp; &middot; &nbsp;
-        April 2, 2023
-      </p>
-      <p class="post-tags">
-        <a href="/blog/2023">
-          <i class="fas fa-calendar fa-sm"></i> 2023 </a>
-
-        
-
-        
-      </p>
-    </li>
-
-    
-
-    
-    
-    
-    
-
-    <li>
-      <h3>
-        
-        <a class="post-title" href="/blog/2023/research-philosopy/">Notes on My Research Philosophy</a>
-        
-      </h3>
-      <p>My thoughts on how I can be effective in research.</p>
-      <p class="post-meta">
-        3 min read &nbsp; &middot; &nbsp;
-        April 2, 2023
-      </p>
-      <p class="post-tags">
-        <a href="/blog/2023">
-          <i class="fas fa-calendar fa-sm"></i> 2023 </a>
-
-        
-
-        
-      </p>
-    </li>
-
-    
-
-    
-    
-    
-    
-
-    <li>
-      <h3>
-        
-        <a class="post-title" href="/blog/2022/apparently_language_to_bridge_the_AI_ethics_AI_safety_language_divide/">The Apparent Perspective: Language to Bridge the Anthropomorphism Divide</a>
-        
-      </h3>
-      <p>Why AI safety and AI ethics folks keep talking past each other, and what we can do about it.</p>
-      <p class="post-meta">
-        9 min read &nbsp; &middot; &nbsp;
-        December 20, 2022
-      </p>
-      <p class="post-tags">
-        <a href="/blog/2022">
-          <i class="fas fa-calendar fa-sm"></i> 2022 </a>
-
-        
-
-        
-      </p>
-    </li>
-
-    
-  </ul>
-
-  
-<nav aria-label="Blog page naviation">
-  <ul class="pagination pagination-lg justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="" tabindex="-1" aria-disabled="">Newer</a>
-    </li>
-    
-      
-        <li class="page-item active"><a class="page-link" href="/blog/index.html" title="blog">1</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/2/index.html" title="blog - page 2">2</a></li>
-      
-    
-    <li class="page-item ">
-      <a class="page-link" href="/blog/page/2/">Older</a>
-    </li>
-  </ul>
-</nav>
-
-
+  </article>
 
 </div>
+    </div>
+    
+    <div class="blog-toc-container">
+      <div class="blog-toc">
+        <ul><li>Moral Mimicry<ul><li><a href="#moral-foundations-theory" class="anchor">Moral Foundations Theory</a></li><li><a href="#how-do-language-models-use-moral-language" class="anchor">How do language models use moral language?</a></li><li><a href="#do-language-models-reproduce-our-moral-biases" class="anchor">Do language models reproduce our moral biases?</a></li><li><a href="#how-does-llm-foundation-use-change-with-model-size" class="anchor">How does LLM foundation use change with model size?</a></li><li><a href="#read-the-paper" class="anchor">Read the Paper</a></li><li><a href="#related-work" class="anchor">Related Work</a><ul><li><a href="#footnotes" class="anchor">Footnotes</a></li></ul></li></ul></li></ul></li></ul>
+      </div>
     </div>
     
   </div>
